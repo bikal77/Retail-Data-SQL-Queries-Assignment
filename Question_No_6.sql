@@ -1,6 +1,5 @@
 WITH product_reorders AS (
  SELECT op.product_id,
-10
  p.product_name,
  COUNT(op.reordered) AS total_reorders,
  COUNT(DISTINCT o.user_id) AS unique_users
